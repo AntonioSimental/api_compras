@@ -1,0 +1,21 @@
+POST http://localhost:3000/api/compras HTTP/1.1
+Content-Type: application/json
+
+{
+    "producto": "libreta",
+    "precio": 500
+}
+
+###
+DELETE http://localhost:3000/api/compras/delete/2 HTTP/1.1
+
+###
+GET http://localhost:3000/api/compras/ HTTP/1.1
+
+###
+PATCH http://localhost:3000/api/compras/actualizar/3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "precio": 200
+}
